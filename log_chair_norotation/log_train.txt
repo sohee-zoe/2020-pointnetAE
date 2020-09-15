@@ -1,0 +1,183 @@
+Namespace(batch_size=32, category='Chair', decay_rate=0.7, decay_step=200000, gpu=0, learning_rate=0.001, log_dir='log_chair_norotation', max_epoch=201, model='model', momentum=0.9, no_rotation=True, num_point=2048, optimizer='adam')
+pid: 9716
+**** EPOCH 000 ****
+2020-09-15 16:20:12.359932
+ -- 010 / 095 --
+mean loss: 4.592796
+mean pc loss: 0.045928
+ -- 020 / 095 --
+mean loss: 1.842300
+mean pc loss: 0.018423
+ -- 030 / 095 --
+mean loss: 1.602850
+mean pc loss: 0.016029
+ -- 040 / 095 --
+mean loss: 1.531670
+mean pc loss: 0.015317
+ -- 050 / 095 --
+mean loss: 1.502998
+mean pc loss: 0.015030
+ -- 060 / 095 --
+mean loss: 1.493795
+mean pc loss: 0.014938
+ -- 070 / 095 --
+mean loss: 1.375918
+mean pc loss: 0.013759
+ -- 080 / 095 --
+mean loss: 1.614152
+mean pc loss: 0.016142
+ -- 090 / 095 --
+mean loss: 1.604226
+mean pc loss: 0.016042
+2020-09-15 16:24:42.697588
+---- EPOCH 000 EVALUATION ----
+eval mean loss: 1.320546
+eval mean pc loss: 0.013205
+Model saved in file: log_chair_norotation/best_model_epoch_000.ckpt
+Model saved in file: log_chair_norotation/model.ckpt
+**** EPOCH 001 ****
+2020-09-15 16:25:11.321398
+ -- 010 / 095 --
+mean loss: 1.696371
+mean pc loss: 0.016964
+ -- 020 / 095 --
+mean loss: 1.712391
+mean pc loss: 0.017124
+ -- 030 / 095 --
+mean loss: 1.350089
+mean pc loss: 0.013501
+ -- 040 / 095 --
+mean loss: 1.477804
+mean pc loss: 0.014778
+ -- 050 / 095 --
+mean loss: 1.754634
+mean pc loss: 0.017546
+ -- 060 / 095 --
+mean loss: 1.570346
+mean pc loss: 0.015703
+ -- 070 / 095 --
+mean loss: 1.573354
+mean pc loss: 0.015734
+ -- 080 / 095 --
+mean loss: 1.317541
+mean pc loss: 0.013175
+ -- 090 / 095 --
+mean loss: 2.307027
+mean pc loss: 0.023070
+2020-09-15 16:28:56.493727
+---- EPOCH 001 EVALUATION ----
+eval mean loss: 1.546122
+eval mean pc loss: 0.015461
+**** EPOCH 002 ****
+2020-09-15 16:29:12.344195
+ -- 010 / 095 --
+mean loss: 2.105681
+mean pc loss: 0.021057
+ -- 020 / 095 --
+mean loss: 1.802894
+mean pc loss: 0.018029
+ -- 030 / 095 --
+mean loss: 1.841601
+mean pc loss: 0.018416
+ -- 040 / 095 --
+mean loss: 1.429107
+mean pc loss: 0.014291
+ -- 050 / 095 --
+mean loss: 1.242297
+mean pc loss: 0.012423
+ -- 060 / 095 --
+mean loss: 1.109774
+mean pc loss: 0.011098
+ -- 070 / 095 --
+mean loss: 2.535403
+mean pc loss: 0.025354
+ -- 080 / 095 --
+mean loss: 1.925556
+mean pc loss: 0.019256
+ -- 090 / 095 --
+mean loss: 1.654565
+mean pc loss: 0.016546
+2020-09-15 16:33:04.928676
+---- EPOCH 002 EVALUATION ----
+eval mean loss: 1.169689
+eval mean pc loss: 0.011697
+Model saved in file: log_chair_norotation/best_model_epoch_002.ckpt
+**** EPOCH 003 ****
+2020-09-15 16:33:21.003228
+ -- 010 / 095 --
+mean loss: 1.274537
+mean pc loss: 0.012745
+ -- 020 / 095 --
+mean loss: 1.440409
+mean pc loss: 0.014404
+ -- 030 / 095 --
+mean loss: 1.257770
+mean pc loss: 0.012578
+ -- 040 / 095 --
+mean loss: 1.073621
+mean pc loss: 0.010736
+ -- 050 / 095 --
+mean loss: 1.201579
+mean pc loss: 0.012016
+ -- 060 / 095 --
+mean loss: 1.076827
+mean pc loss: 0.010768
+ -- 070 / 095 --
+mean loss: 1.040829
+mean pc loss: 0.010408
+ -- 080 / 095 --
+mean loss: 1.036457
+mean pc loss: 0.010365
+ -- 090 / 095 --
+mean loss: 0.985863
+mean pc loss: 0.009859
+2020-09-15 16:37:12.517904
+---- EPOCH 003 EVALUATION ----
+eval mean loss: 0.895302
+eval mean pc loss: 0.008953
+Model saved in file: log_chair_norotation/best_model_epoch_003.ckpt
+**** EPOCH 004 ****
+2020-09-15 16:37:28.241172
+ -- 010 / 095 --
+mean loss: 0.980901
+mean pc loss: 0.009809
+ -- 020 / 095 --
+mean loss: 0.895511
+mean pc loss: 0.008955
+ -- 030 / 095 --
+mean loss: 0.856769
+mean pc loss: 0.008568
+ -- 040 / 095 --
+mean loss: 0.870680
+mean pc loss: 0.008707
+ -- 050 / 095 --
+mean loss: 0.852646
+mean pc loss: 0.008526
+ -- 060 / 095 --
+mean loss: 0.848580
+mean pc loss: 0.008486
+ -- 070 / 095 --
+mean loss: 0.828443
+mean pc loss: 0.008284
+ -- 080 / 095 --
+mean loss: 0.775809
+mean pc loss: 0.007758
+ -- 090 / 095 --
+mean loss: 0.763767
+mean pc loss: 0.007638
+2020-09-15 16:41:20.091437
+---- EPOCH 004 EVALUATION ----
+eval mean loss: 0.756831
+eval mean pc loss: 0.007568
+Model saved in file: log_chair_norotation/best_model_epoch_004.ckpt
+**** EPOCH 005 ****
+2020-09-15 16:41:35.466665
+ -- 010 / 095 --
+mean loss: 0.738261
+mean pc loss: 0.007383
+ -- 020 / 095 --
+mean loss: 0.759450
+mean pc loss: 0.007595
+ -- 030 / 095 --
+mean loss: 0.913857
+mean pc loss: 0.009139

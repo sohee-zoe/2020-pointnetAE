@@ -14,6 +14,30 @@ For point cloud reconstruction loss function, we need to compile two custum TF o
 
 For a visualization helper, go to `utils/` and run `sh compile_render_balls_so.sh` -- run `python show3d_balls.py` to test if you have successfully compiled it.
 
+
+## Compile
+`/pointnet-autoencoder/tf_ops/tf_compile.sh`
+
+	CUDA_ROOT=/usr/local/cuda-10.0
+	TF_INC=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')
+	TF_LIB=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib())')
+	CXX=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_compile_flags()[1])')
+	LINK=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_link_flags()[1])')
+
+
+	$CUDA_ROOT/bin/nvcc approxmatch/tf_approxmatch_g.cu -o approxmatch/tf_approxmatch_g.cu.o -c -O2 -DGOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
+
+	g++ -std=c++11 approxmatch/tf_approxmatch.cpp approxmatch/tf_approxmatch_g.cu.o -o approxmatch/tf_approxmatch_so.so -shared -fPIC -I$TF_INC/ -I$TF_INC/external/nsync/public -L$TF_LIB $LINK -I$CUDA_ROOT/include -lcudart -L$CUDA_ROOT/lib64/ -O2 $CXX
+
+
+	$CUDA_ROOT/bin/nvcc nn_distance/tf_nndistance_g.cu -o nn_distance/tf_nndistance_g.cu.o -c -O2 -DGOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
+
+	g++ -std=c++11 nn_distance/tf_nndistance.cpp nn_distance/tf_nndistance_g.cu.o -o nn_distance/tf_nndistance_so.so -shared -fPIC -I$TF_INC/ -I$TF_INC/external/nsync/public -L$TF_LIB $LINK -I$CUDA_ROOT/include -lcudart -L$CUDA_ROOT/lib64/ -O2 $CXX
+
+`$ bash tf_compile.sh`
+
+
+
 ## Download Data
 ShapeNetPart dataset is available <a href="https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0.zip" target="_blank">HERE (635MB)</a>. Simply download the zip file and move the `shapenetcore_partanno_segmentation_benchmark_v0` folder to `data`.
 

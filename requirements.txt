@@ -13,7 +13,7 @@ decorator==4.4.0
 defusedxml==0.6.0
 easydict==1.9
 entrypoints==0.3
-enum34==1.1.6
+enum34==1.1.10
 execnet==1.7.1
 exrsplit==0.0.1
 gast==0.3.3

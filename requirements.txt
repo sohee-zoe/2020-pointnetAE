@@ -23,7 +23,7 @@ grpcio==1.27.2
 h5py==2.10.0
 html5lib==0.9999999
 idna==2.8
-image-classifiers==1.0.0b1
+image-classifiers==1.0.0
 imageio==2.8.0
 imath==0.0.1
 importlib-metadata==1.6.1

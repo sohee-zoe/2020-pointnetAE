@@ -25,7 +25,7 @@ html5lib==0.9999999
 idna==2.8
 image-classifiers==1.0.0b1
 imageio==2.8.0
-imath==0.0.1
+imath==0.0.2
 importlib-metadata==1.6.1
 ipykernel==5.1.2
 ipython==7.7.0
